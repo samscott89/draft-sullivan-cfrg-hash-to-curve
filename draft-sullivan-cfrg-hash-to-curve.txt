@@ -124,7 +124,7 @@ Internet-Draft                hash-to-curve                   March 2018
    Icart introduced yet another deterministic algorithm which maps F_{q}
    to any EC where q = 2 mod 3 in time O(log^3 q) [Icart09].  Elligator
    (2) [Elligator2] is yet another deterministic algorithm for any odd-
-   characteristic EC that has a point of order 2.  Elligator can be
+   characteristic EC that has a point of order 2.  Elligator2 can be
    applied to Curve25519 and Curve448, which are both CFRG-recommended
    curves [RFC7748].
 
@@ -512,7 +512,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
      alpha - value to be hashed, an octet string
 
-     u - fixed nonsquare value in Fp.
+     u - fixed non-square value in Fp.
      f() - Curve function
 
    Output:
