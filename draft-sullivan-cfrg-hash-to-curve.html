@@ -296,7 +296,8 @@ address {
 <link href="#rfc.section.6" rel="Chapter" title="6 Cost Comparison">
 <link href="#rfc.section.7" rel="Chapter" title="7 Security Considerations">
 <link href="#rfc.section.8" rel="Chapter" title="8 Acknowledgements">
-<link href="#rfc.references" rel="Chapter" title="9 Normative References">
+<link href="#rfc.section.9" rel="Chapter" title="9 Contributors">
+<link href="#rfc.references" rel="Chapter" title="10 Normative References">
 <link href="#rfc.appendix.A" rel="Chapter" title="A Try-and-Increment Method">
 <link href="#rfc.appendix.B" rel="Chapter" title="B Sample Code">
 <link href="#rfc.appendix.B.1" rel="Chapter" title="B.1 Icart Method">
@@ -309,8 +310,8 @@ address {
   <meta name="generator" content="xml2rfc version 2.9.6 - https://tools.ietf.org/tools/xml2rfc" />
   <link rel="schema.dct" href="http://purl.org/dc/terms/" />
 
-  <meta name="dct.creator" content="Goldberg, S., Sullivan, N., and C. Wood" />
-  <meta name="dct.identifier" content="urn:ietf:id:draft-goldberg-hash-to-curve-latest" />
+  <meta name="dct.creator" content="Sullivan, N. and C. Wood" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-sullivan-hash-to-curve-latest" />
   <meta name="dct.issued" scheme="ISO8601" content="2018-03-02" />
   <meta name="dct.abstract" content="This document specifies a number of algorithms that may be used to hash arbitrary strings to Elliptic Curves." />
   <meta name="description" content="This document specifies a number of algorithms that may be used to hash arbitrary strings to Elliptic Curves." />
@@ -324,26 +325,18 @@ address {
     
     	<tr>
 <td class="left">Network Working Group</td>
-<td class="right">S. Goldberg</td>
-</tr>
-<tr>
-<td class="left">Internet-Draft</td>
-<td class="right">Boston University</td>
-</tr>
-<tr>
-<td class="left">Intended status: Informational</td>
 <td class="right">N. Sullivan</td>
 </tr>
 <tr>
-<td class="left">Expires: September 3, 2018</td>
+<td class="left">Internet-Draft</td>
 <td class="right">Cloudflare</td>
 </tr>
 <tr>
-<td class="left"></td>
+<td class="left">Intended status: Informational</td>
 <td class="right">C. Wood</td>
 </tr>
 <tr>
-<td class="left"></td>
+<td class="left">Expires: September 3, 2018</td>
 <td class="right">Apple Inc.</td>
 </tr>
 <tr>
@@ -356,7 +349,7 @@ address {
   </table>
 
   <p class="title">Hashing to Elliptic Curves<br />
-  <span class="filename">draft-goldberg-hash-to-curve-latest</span></p>
+  <span class="filename">draft-sullivan-hash-to-curve-latest</span></p>
   
   <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
 <p>This document specifies a number of algorithms that may be used to hash arbitrary strings to Elliptic Curves.</p>
@@ -402,7 +395,9 @@ address {
 </li>
 <li>8.   <a href="#rfc.section.8">Acknowledgements</a>
 </li>
-<li>9.   <a href="#rfc.references">Normative References</a>
+<li>9.   <a href="#rfc.section.9">Contributors</a>
+</li>
+<li>10.   <a href="#rfc.references">Normative References</a>
 </li>
 <li>Appendix A.   <a href="#rfc.appendix.A">Try-and-Increment Method</a>
 </li>
@@ -731,8 +726,14 @@ Steps:
 <a href="#rfc.section.8">8.</a> <a href="#acknowledgements" id="acknowledgements">Acknowledgements</a>
 </h1>
 <p id="rfc.section.8.p.1">The authors would like to thank Adam Langley for this detailed writeup up Elligator2 with Curve25519 <a href="#ElligatorAGL" class="xref">[ElligatorAGL]</a>. We also thank Sean Devlin and Thomas Icart for feedback on earlier versions of this document.</p>
+<h1 id="rfc.section.9">
+<a href="#rfc.section.9">9.</a> <a href="#contributors" id="contributors">Contributors</a>
+</h1>
+<p></p>
+
+<ul><li>Sharon Goldberg <br> Boston University <br> goldbe@cs.bu.edu</li></ul>
 <h1 id="rfc.references">
-<a href="#rfc.references">9.</a> Normative References</h1>
+<a href="#rfc.references">10.</a> Normative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="BLS01">[BLS01]</b></td>
@@ -1011,28 +1012,6 @@ def elligator2_straight(alpha):
 </pre>
 <h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
 <div class="avoidbreak">
-  <address class="vcard">
-	<span class="vcardline">
-	  <span class="fn">Sharon Goldberg</span> 
-	  <span class="n hidden">
-		<span class="family-name">Goldberg</span>
-	  </span>
-	</span>
-	<span class="org vcardline">Boston University</span>
-	<span class="adr">
-	  <span class="vcardline">111 Cummington St, MCS135</span>
-
-	  <span class="vcardline">
-		<span class="locality">Boston</span>,  
-		<span class="region"></span>
-		<span class="code"></span>
-	  </span>
-	  <span class="country-name vcardline">United States of America</span>
-	</span>
-	<span class="vcardline">EMail: <a href="mailto:goldbe@cs.bu.edu">goldbe@cs.bu.edu</a></span>
-
-  </address>
-</div><div class="avoidbreak">
   <address class="vcard">
 	<span class="vcardline">
 	  <span class="fn">Nick Sullivan</span> 

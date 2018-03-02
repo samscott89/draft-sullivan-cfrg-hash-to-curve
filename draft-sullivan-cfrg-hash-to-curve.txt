@@ -2,17 +2,15 @@
 
 
 
-Network Working Group                                        S. Goldberg
-Internet-Draft                                         Boston University
-Intended status: Informational                               N. Sullivan
-Expires: September 2, 2018                                    Cloudflare
-                                                                 C. Wood
-                                                              Apple Inc.
-                                                          March 01, 2018
+Network Working Group                                        N. Sullivan
+Internet-Draft                                                Cloudflare
+Intended status: Informational                                   C. Wood
+Expires: September 3, 2018                                    Apple Inc.
+                                                          March 02, 2018
 
 
                        Hashing to Elliptic Curves
-                  draft-goldberg-hash-to-curve-latest
+                  draft-sullivan-hash-to-curve-latest
 
 Abstract
 
@@ -34,7 +32,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 2, 2018.
+   This Internet-Draft will expire on September 3, 2018.
 
 Copyright Notice
 
@@ -53,7 +51,9 @@ Copyright Notice
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 1]
+
+
+Sullivan & Wood         Expires September 3, 2018               [Page 1]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -74,8 +74,9 @@ Table of Contents
    6.  Cost Comparison . . . . . . . . . . . . . . . . . . . . . . .  10
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .  11
    8.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  11
-   9.  Normative References  . . . . . . . . . . . . . . . . . . . .  11
-   Appendix A.  Try-and-Increment Method . . . . . . . . . . . . . .  12
+   9.  Contributors  . . . . . . . . . . . . . . . . . . . . . . . .  11
+   10. Normative References  . . . . . . . . . . . . . . . . . . . .  11
+   Appendix A.  Try-and-Increment Method . . . . . . . . . . . . . .  13
    Appendix B.  Sample Code  . . . . . . . . . . . . . . . . . . . .  13
      B.1.  Icart Method  . . . . . . . . . . . . . . . . . . . . . .  13
      B.2.  Shallue-Woestijne-Ulas Method . . . . . . . . . . . . . .  14
@@ -105,15 +106,15 @@ Table of Contents
    f(m)), for curve function f, belongs on E.  This algorithm is
    expected to find a valid curve point after approximately two
    attempts, i.e., when ctr=1, on average.  (See Appendix Appendix A for
-   a more detailed description of this algorithm.)  Since the running
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 2]
+Sullivan & Wood         Expires September 3, 2018               [Page 2]
 
 Internet-Draft                hash-to-curve                   March 2018
 
 
+   a more detailed description of this algorithm.)  Since the running
    time of the algorithm depends on m, this algorithm is NOT safe for
    cases sensitive to timing side channel attacks.  Deterministic
    algorithms are needed in such cases where failures are undesirable.
@@ -161,15 +162,15 @@ Internet-Draft                hash-to-curve                   March 2018
 
    The SWU variant from Section Section 4.2 applies to any curve.  As
    such, this algorithm SHOULD be used if no other better alternative is
-   known.  More efficient variants and their curve requirements are
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 3]
+Sullivan & Wood         Expires September 3, 2018               [Page 3]
 
 Internet-Draft                hash-to-curve                   March 2018
 
 
+   known.  More efficient variants and their curve requirements are
    shown in the table below.  These MAY be used if the target curve
    meets the listed criteria.
 
@@ -220,8 +221,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-
-Goldberg, et al.        Expires September 2, 2018               [Page 4]
+Sullivan & Wood         Expires September 3, 2018               [Page 4]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -277,7 +277,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 5]
+Sullivan & Wood         Expires September 3, 2018               [Page 5]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -333,7 +333,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 6]
+Sullivan & Wood         Expires September 3, 2018               [Page 6]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -389,7 +389,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 7]
+Sullivan & Wood         Expires September 3, 2018               [Page 7]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -445,7 +445,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 8]
+Sullivan & Wood         Expires September 3, 2018               [Page 8]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -501,7 +501,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018               [Page 9]
+Sullivan & Wood         Expires September 3, 2018               [Page 9]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -557,7 +557,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Goldberg, et al.        Expires September 2, 2018              [Page 10]
+Sullivan & Wood         Expires September 3, 2018              [Page 10]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -592,7 +592,13 @@ Internet-Draft                hash-to-curve                   March 2018
    Sean Devlin and Thomas Icart for feedback on earlier versions of this
    document.
 
-9.  Normative References
+9.  Contributors
+
+   o  Sharon Goldberg
+      Boston University
+      goldbe@cs.bu.edu
+
+10.  Normative References
 
    [BLS01]    "Short signatures from the Weil pairing", n.d.,
               <https://iacr.org/archive/asiacrypt2001/22480516.pdf>.
@@ -603,20 +609,19 @@ Internet-Draft                hash-to-curve                   March 2018
    [ECOPRF]   "EC-OPRF - Oblivious Pseudorandom Functions using Elliptic
               Curves", n.d..
 
+
+
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 11]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
    [Elligator2]
               "Elligator -- Elliptic-curve points indistinguishable from
               uniform random strings", n.d.,
               <https://dl.acm.org/ft_gateway.cfm?id=2516734&type=pdf>.
-
-
-
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 11]
-
-Internet-Draft                hash-to-curve                   March 2018
-
 
    [ElligatorAGL]
               "Implementing Elligator for Curve25519", n.d.,
@@ -658,6 +663,17 @@ Internet-Draft                hash-to-curve                   March 2018
    [SWU]      "Rational points on certain hyperelliptic curves over
               finite fields", n.d., <https://arxiv.org/pdf/0706.1448>.
 
+
+
+
+
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 12]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
 Appendix A.  Try-and-Increment Method
 
    In cases where constant time execution is not required, the so-called
@@ -666,13 +682,6 @@ Appendix A.  Try-and-Increment Method
    standard hash function ("Hash"), e.g., SHA256, and then checking to
    see if the resulting point E(m, f(m)), for curve function f, belongs
    on E.  This is detailed below.
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 12]
-
-Internet-Draft                hash-to-curve                   March 2018
-
 
    1. ctr = 0
    3. h = "INVALID"
@@ -713,6 +722,14 @@ def icart(u):
   y = u*x + v
   return E(x, y)
 
+
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 13]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
 def icart_straight(u):
     u = F(u)
     u2 = u ^ 2
@@ -722,14 +739,6 @@ def icart_straight(u):
     v1 = 3 * A
     v1 = v1 - t2
     t1 = 6 * u
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 13]
-
-Internet-Draft                hash-to-curve                   March 2018
-
-
     t3 = t1 ^ (-1)
     v = v1 * t3
     assert v == (3 * A - u^4) // (6 * u)
@@ -769,6 +778,14 @@ p = 1157920892103562487626974469494075735300861434152903141955336313088670978539
 F = GF(p)
 A = F(p - 3)
 B = F(ZZ("5ac635d8aa3a93e7b3ebbd55769886bc651d06b0cc53b0f63bce3c3e27d2604b", 16))
+
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 14]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
 E = EllipticCurve([A, B])
 
 def simple_swu(alpha):
@@ -777,14 +794,6 @@ def simple_swu(alpha):
     alpha = -(t^2)
     frac = (1 / (alpha^2 + alpha))
     x2 = (-B / A) * (1 + frac)
-
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 14]
-
-Internet-Draft                hash-to-curve                   March 2018
-
 
     x3 = alpha * x2
     h2 = x2^3 + A * x2 + B
@@ -825,6 +834,14 @@ def simple_swu_straight(alpha):
     y2 = h3^((p + 1) // 4)
 
     # Is it square?
+
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 15]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
     e = y1^2 == h2
 
     x = x2
@@ -834,13 +851,6 @@ def simple_swu_straight(alpha):
     y = y1
     if e != 1:
         y = y2
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 15]
-
-Internet-Draft                hash-to-curve                   March 2018
-
 
     return E(x, y)
 
@@ -881,6 +891,13 @@ B.4.  Elligator2 Method
    def elligator2_straight(alpha):
        r = F(alpha)
 
+
+
+Sullivan & Wood         Expires September 3, 2018              [Page 16]
+
+Internet-Draft                hash-to-curve                   March 2018
+
+
        r = r^2
        r = r * 2
        r = r + 1
@@ -890,14 +907,6 @@ B.4.  Elligator2 Method
 
        v2 = v^2
        v3 = v * v2
-
-
-
-Goldberg, et al.        Expires September 2, 2018              [Page 16]
-
-Internet-Draft                hash-to-curve                   March 2018
-
-
        e = v3 + v
        v2 = v2 * A
        e = v2 + e
@@ -918,15 +927,6 @@ Internet-Draft                hash-to-curve                   March 2018
        return (u, curve25519(u))
 
 Authors' Addresses
-
-   Sharon Goldberg
-   Boston University
-   111 Cummington St, MCS135
-   Boston
-   United States of America
-
-   Email: goldbe@cs.bu.edu
-
 
    Nick Sullivan
    Cloudflare
@@ -949,4 +949,4 @@ Authors' Addresses
 
 
 
-Goldberg, et al.        Expires September 2, 2018              [Page 17]
+Sullivan & Wood         Expires September 3, 2018              [Page 17]
