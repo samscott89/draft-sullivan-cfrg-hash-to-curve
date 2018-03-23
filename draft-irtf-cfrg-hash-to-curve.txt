@@ -5,12 +5,12 @@
 Network Working Group                                        N. Sullivan
 Internet-Draft                                                Cloudflare
 Intended status: Informational                                   C. Wood
-Expires: September 6, 2018                                    Apple Inc.
-                                                          March 05, 2018
+Expires: September 24, 2018                                   Apple Inc.
+                                                          March 23, 2018
 
 
                        Hashing to Elliptic Curves
-               draft-sullivan-cfrg-hash-to-curve-latest
+                  draft-irtf-cfrg-hash-to-curve-latest
 
 Abstract
 
@@ -32,7 +32,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 6, 2018.
+   This Internet-Draft will expire on September 24, 2018.
 
 Copyright Notice
 
@@ -41,7 +41,7 @@ Copyright Notice
 
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents
-   (http://trustee.ietf.org/license-info) in effect on the date of
+   (https://trustee.ietf.org/license-info) in effect on the date of
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 1]
+Sullivan & Wood        Expires September 24, 2018               [Page 1]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 2]
+Sullivan & Wood        Expires September 24, 2018               [Page 2]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -165,7 +165,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 3]
+Sullivan & Wood        Expires September 24, 2018               [Page 3]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -221,7 +221,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 4]
+Sullivan & Wood        Expires September 24, 2018               [Page 4]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -277,7 +277,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 5]
+Sullivan & Wood        Expires September 24, 2018               [Page 5]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -333,7 +333,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 6]
+Sullivan & Wood        Expires September 24, 2018               [Page 6]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -389,7 +389,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 7]
+Sullivan & Wood        Expires September 24, 2018               [Page 7]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -445,7 +445,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 8]
+Sullivan & Wood        Expires September 24, 2018               [Page 8]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -501,7 +501,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018               [Page 9]
+Sullivan & Wood        Expires September 24, 2018               [Page 9]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -557,7 +557,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 10]
+Sullivan & Wood        Expires September 24, 2018              [Page 10]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -613,7 +613,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 11]
+Sullivan & Wood        Expires September 24, 2018              [Page 11]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -623,8 +623,8 @@ Internet-Draft                hash-to-curve                   March 2018
 
    [Elligator2]
               "Elligator -- Elliptic-curve points indistinguishable from
-              uniform random strings", n.d., <https://dl.acm.org/
-              ft_gateway.cfm?id=2516734&type=pdf>.
+              uniform random strings", n.d.,
+              <https://dl.acm.org/ft_gateway.cfm?id=2516734&type=pdf>.
 
    [ElligatorAGL]
               "Implementing Elligator for Curve25519", n.d.,
@@ -639,8 +639,8 @@ Internet-Draft                hash-to-curve                   March 2018
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997, <https://www.rfc-
-              editor.org/info/rfc2119>.
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
 
    [RFC7748]  Langley, A., Hamburg, M., and S. Turner, "Elliptic Curves
               for Security", RFC 7748, DOI 10.17487/RFC7748, January
@@ -653,8 +653,8 @@ Internet-Draft                hash-to-curve                   March 2018
 
    [RFC8032]  Josefsson, S. and I. Liusvaara, "Edwards-Curve Digital
               Signature Algorithm (EdDSA)", RFC 8032,
-              DOI 10.17487/RFC8032, January 2017, <https://www.rfc-
-              editor.org/info/rfc8032>.
+              DOI 10.17487/RFC8032, January 2017,
+              <https://www.rfc-editor.org/info/rfc8032>.
 
    [SECG1]    "SEC 1 -- Elliptic Curve Cryptography", n.d.,
               <http://www.secg.org/sec1-v2.pdf>.
@@ -669,7 +669,7 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 12]
+Sullivan & Wood        Expires September 24, 2018              [Page 12]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -725,7 +725,7 @@ def icart(u):
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 13]
+Sullivan & Wood        Expires September 24, 2018              [Page 13]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -781,7 +781,7 @@ B.2.  Shallue-Woestijne-Ulas Method
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 14]
+Sullivan & Wood        Expires September 24, 2018              [Page 14]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -837,7 +837,7 @@ def simple_swu_straight(alpha):
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 15]
+Sullivan & Wood        Expires September 24, 2018              [Page 15]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -893,7 +893,7 @@ B.4.  Elligator2 Method
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 16]
+Sullivan & Wood        Expires September 24, 2018              [Page 16]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -949,7 +949,7 @@ Authors' Addresses
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 17]
+Sullivan & Wood        Expires September 24, 2018              [Page 17]
 
 Internet-Draft                hash-to-curve                   March 2018
 
@@ -1005,4 +1005,4 @@ Internet-Draft                hash-to-curve                   March 2018
 
 
 
-Sullivan & Wood         Expires September 6, 2018              [Page 18]
+Sullivan & Wood        Expires September 24, 2018              [Page 18]
